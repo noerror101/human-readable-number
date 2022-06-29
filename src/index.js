@@ -7,10 +7,10 @@ module.exports = function toReadable(number) {
         result = one[number];
     } else if (number < 100) {
         dozensCalc = Math.floor(number / 10)
-        result =  dozens[dozensCalc] + ' ' + one[number % 10]);
+        result =  dozens[dozensCalc] + ' ' + one[number % 10];
     } else {
         oneCalc = Math.floor(number / 100)
-        result =  one[oneCalc] + ' hundred ' + toReadable([number % 100]));
+        result =  one[oneCalc] + ' hundred '  + toReadable([number % 100]);
     }
     return result;
 }
